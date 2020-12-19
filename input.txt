@@ -1,0 +1,41 @@
+IN
+POP [0]
+PUSH 1
+POP [1]
+PUSH 1
+POP [2]
+
+PUSH [0]
+PUSH 2
+SUB
+JL mark2
+
+mark:
+
+PUSH [1]
+PUSH [2]
+ADD
+POP [3]
+
+PUSH [2]
+POP [1]
+
+PUSH [3]
+POP [2]
+
+PUSH [0]
+PUSH 1
+SUB
+POP [0]
+
+PUSH [0]
+PUSH 1
+SUB
+JG mark
+
+mark2:
+
+PUSH [2]
+OUT
+
+END
