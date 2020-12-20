@@ -217,7 +217,7 @@ $	return true;
 
 
 int main() {
-$	FILE *in = fopen("C:/Users/Pasha/my_programs/project_processor/input.txt", "rb");
+$	FILE *in = fopen("input.txt", "rb");
 $	FILE *out = fopen("byte_code.txt", "wb");
 
 	printf("%p %p\n", in, out);
